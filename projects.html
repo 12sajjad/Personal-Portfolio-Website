@@ -1,0 +1,459 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>My Projects | Portfolio</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+<style>
+
+
+
+/* Projects Page */
+
+.project-section {
+    padding: 80px 8%;
+    background: #f4f7fc;
+    min-height: 100vh;
+}
+
+.project-heading {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 55px;
+}
+
+.subtitle {
+    color: #2563eb;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.project-heading h1 {
+    font-size: 42px;
+    color: #172554;
+    margin: 15px 0;
+}
+
+.project-heading h1 span {
+    color: #2563eb;
+}
+
+.project-heading p {
+    color: #64748b;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+
+/* Project Grid */
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+
+/* Project Card */
+
+.project-card {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.04);
+    transition: 0.3s;
+    position: relative;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 30px rgba(37,99,235,0.13);
+    border-color: #93c5fd;
+}
+
+.project-number {
+    font-size: 35px;
+    font-weight: bold;
+    color: #dbeafe;
+    margin-bottom: 15px;
+}
+
+.category {
+    display: inline-block;
+    background: #eff6ff;
+    color: #2563eb;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 18px;
+}
+
+.project-card h3 {
+    color: #172554;
+    font-size: 20px;
+    margin-bottom: 14px;
+}
+
+.project-card p {
+    color: #64748b;
+    font-size: 14px;
+    line-height: 1.8;
+    min-height: 75px;
+}
+
+
+/* Technology Tags */
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 20px 0;
+}
+
+.tags span {
+    background: #f1f5f9;
+    color: #475569;
+    padding: 6px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+}
+
+
+/* Project Link */
+
+.project-link {
+    display: inline-block;
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+.project-link:hover {
+    color: #1e40af;
+    letter-spacing: 1px;
+}
+
+
+/* Navigation Active Link */
+
+nav ul li a.active {
+    color: #2563eb;
+}
+
+
+/* Footer */
+
+footer {
+    background: #172554;
+    color: white;
+    text-align: center;
+    padding: 22px;
+    font-size: 14px;
+}
+
+
+/* Responsive Design */
+
+@media (max-width: 1000px) {
+
+    .projects {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .projects {
+        grid-template-columns: 1fr;
+    }
+
+    .project-section {
+        padding: 50px 5%;
+    }
+
+    .project-heading h1 {
+        font-size: 30px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+</style>
+
+</head>
+
+<body>
+
+<!-- Navigation Bar -->
+
+<nav>
+
+    <div class="logo">MyPortfolio<span>.</span></div>
+
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="projects.html" class="active">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+
+</nav>
+
+
+<!-- Projects Section -->
+
+<section class="project-section">
+
+    <div class="project-heading">
+
+        <span class="subtitle">MY WORK</span>
+
+        <h1>My Recent <span>Projects</span></h1>
+
+        <p>
+            Here are some of my academic, technical and personal
+            projects that showcase my skills and learning journey.
+        </p>
+
+    </div>
+
+
+    <!-- Project Cards -->
+
+    <div class="projects">
+
+
+        <div class="project-card">
+
+            <div class="project-number">01</div>
+
+            <span class="category">Research Project</span>
+
+            <h3>ECG Signal Quality Assessment</h3>
+
+            <p>
+                MATLAB and Simulink based ECG preprocessing
+                and signal quality assessment.
+            </p>
+
+            <div class="tags">
+                <span>MATLAB</span>
+                <span>Simulink</span>
+                <span>ECG</span>
+            </div>
+
+            <a href="#" class="project-link">View Details ↗</a>
+
+        </div>
+
+
+
+        <div class="project-card">
+
+            <div class="project-number">02</div>
+
+            <span class="category">Academic Project</span>
+
+            <h3>Heart Rate Monitoring</h3>
+
+            <p>
+                Heart rate calculation and RR Interval analysis
+                using ECG signals.
+            </p>
+
+            <div class="tags">
+                <span>MATLAB</span>
+                <span>Signal Processing</span>
+            </div>
+
+            <a href="#" class="project-link">View Details ↗</a>
+
+        </div>
+
+
+
+        <div class="project-card">
+
+            <div class="project-number">03</div>
+
+            <span class="category">Research Project</span>
+
+            <h3>Rule-Based Arrhythmia Detection</h3>
+
+            <p>
+                Detection of abnormal heart rhythms using
+                ECG features and rule-based techniques.
+            </p>
+
+            <div class="tags">
+                <span>ECG</span>
+                <span>Simulink</span>
+                <span>Analysis</span>
+            </div>
+
+            <a href="#" class="project-link">View Details ↗</a>
+
+        </div>
+
+
+
+        <div class="project-card">
+
+            <div class="project-number">04</div>
+
+            <span class="category">Web Development</span>
+
+            <h3>Student Success Hub</h3>
+
+            <p>
+                Academic management system for managing
+                student information and academic activities.
+            </p>
+
+            <div class="tags">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>PHP</span>
+                <span>MySQL</span>
+            </div>
+
+            <a href="#" class="project-link">View Details ↗</a>
+
+        </div>
+
+
+
+        <div class="project-card">
+
+            <div class="project-number">05</div>
+
+            <span class="category">Web Development</span>
+
+            <h3>Personal Portfolio Website</h3>
+
+            <p>
+                A personal portfolio website to showcase
+                my skills, projects and achievements.
+            </p>
+
+            <div class="tags">
+                <span>HTML</span>
+                <span>CSS</span>
+            </div>
+
+            <a href="#" class="project-link">View Details ↗</a>
+
+        </div>
+
+
+
+        <div class="project-card">
+
+            <div class="project-number">06</div>
+
+            <span class="category">Academic Project</span>
+
+            <h3>Library Management System</h3>
+
+            <p>
+                A simple system for managing books,
+                student records and book borrowing information.
+            </p>
+
+            <div class="tags">
+                <span>PHP</span>
+                <span>MySQL</span>
+                <span>HTML</span>
+            </div>
+
+            <a href="#" class="project-link">View Details ↗</a>
+
+        </div>
+
+
+
+        <div class="project-card">
+
+            <div class="project-number">07</div>
+
+            <span class="category">Web Development</span>
+
+            <h3>Online Food Ordering System</h3>
+
+            <p>
+                A web-based food ordering platform where
+                users can browse food items and place orders.
+            </p>
+
+            <div class="tags">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>PHP</span>
+            </div>
+
+            <a href="#" class="project-link">View Details ↗</a>
+
+        </div>
+
+
+
+        <div class="project-card">
+
+            <div class="project-number">08</div>
+
+            <span class="category">Academic Project</span>
+
+            <h3>Student Result Management</h3>
+
+            <p>
+                A student result management system for
+                storing records and calculating academic results.
+            </p>
+
+            <div class="tags">
+                <span>PHP</span>
+                <span>MySQL</span>
+                <span>CSS</span>
+            </div>
+
+            <a href="#" class="project-link">View Details ↗</a>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+<!-- Footer -->
+
+<footer>
+
+    <p>© 2026 MyPortfolio. All Rights Reserved.</p>
+
+</footer>
+
+</body>
+</html>
